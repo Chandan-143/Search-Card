@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif
+}
+/* Navigation bar styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #164343;
+    border: 2px solid #164343;
+    position: sticky;
+    width: 100%;
+    height: 60px;
+   
+}
+  
+.logo{
+    margin: 70px;
+    
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+  
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 30px;
+    padding: 30px;
+}
+  
+.nav-links li a {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 30px;
+    
+}
+.nav-links li a:hover{
+    transition: all 1s;
+    cursor: pointer;
+    color: aqua;
+}
+  
+  
+
+  
+  /* Search section styles */
+  .search {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.gifer.com/UE1A.gif');
+    /* background-size: cover; */
+    background-position: center;
+  }
+  
+  .search-container {
+    background: transparent;
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    padding: 2rem;
+    top:340px;
+    left: 602px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* .search-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  } */
+  
+  .search-container input[type='text'] {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1rem;
+    width: 60%;
+  }
+  
+  .search-container button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Card section styles */
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  
+  .card {
+    width: 22%;
+    margin: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+   
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+
+  /* Navigation bar styles for mobile devices */
+@media only screen and (max-width: 900px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+  }
+  body{
+    position: static;
+  }
+  
+  .logo {
+    margin: 1rem 0;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .nav-links li a {
+    padding: 1rem 0;
+  }
+  
+  .search {
+    height: 40vh;
+  }
+  
+  .search-container {
+    display: flex;
+    padding: 1rem;
+    justify-content: left;
+    top:490px;
+    left: 250px;
+  }
+  
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+/* Card section styles for tablets and desktops */
+@media only screen and (min-width: 601px) {
+  .cards {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: 30%;
+  }
+}
